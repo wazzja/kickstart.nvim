@@ -234,15 +234,6 @@ vim.opt.rtp:prepend(lazypath)
 require('lazy').setup({
   -- NOTE: Plugins can be added with a link (or for a github repo: 'owner/repo' link).
   'tpope/vim-sleuth', -- Detect tabstop and shiftwidth automatically
-  {
-    'FtVim/norminette-lint.nvim',
-    config = function()
-      require('norminette-lint').setup {
-        enable_on_start = false, -- Default to false to improve startup performance
-        keybinding = '<leader>fh', -- Default keybinding, you can define yours
-      }
-    end,
-  },
   -- NOTE: Plugins can also be added by using a table,
   -- with the first argument being the link and the following
   -- keys can be used to configure plugin behavior/loading/etc.
